@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <litepal>
+    <dbname value="my_weather"></dbname>
+    <version vaule="1"></version>
+    <list>
+        <mapping class="com.example.gao.myweather.db.Provice"/>
+        <mapping class="com.example.gao.myweather.db.City"/>
+        <mapping class="com.example.gao.myweather.db.County"/>
+    </list>
+</litepal>
