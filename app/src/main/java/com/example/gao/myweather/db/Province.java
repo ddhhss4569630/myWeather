@@ -6,7 +6,7 @@ import org.litepal.crud.DataSupport;
  * Created by GAO on 2018/7/11.
  */
 
-public class Provice extends DataSupport{
+public class Province extends DataSupport{
     private int id;
     private String provinceName;
     private int provinceCode;
