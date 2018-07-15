@@ -1,5 +1,6 @@
 package com.example.gao.myweather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.Image;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.gao.myweather.gson.Forecast;
 import com.example.gao.myweather.gson.Weather;
+import com.example.gao.myweather.service.AutoUpdateService;
 import com.example.gao.myweather.util.HttpUtil;
 import com.example.gao.myweather.util.Utility;
 
@@ -188,6 +190,8 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+        Intent intent =new Intent(this, AutoUpdateService.class);
+        startService(intent);
 
     }
 
